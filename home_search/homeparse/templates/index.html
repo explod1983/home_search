@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is my home</title>
+</head>
+<body>
+<ul>
+{% for items in all_links %}
+    {% for link, pic in items.items %}
+        <li><a href="{{ link }}">{{ link }}</a></li>
+        <img src="{{ pic }}">
+    {% endfor %}
+{% endfor %}
+</ul>
+</body>
+</html>
